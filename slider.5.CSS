@@ -1,0 +1,250 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/*font-family: 'Roboto', sans-serif;*/
+
+:root {
+--font-heading: #177214;
+--para-font: #777777;
+--red: #951111;
+--bg: #3d0d77;
+--white: #fff;
+--black: rgb(11, 11, 20);
+}
+* {
+font-family: "Roboto", sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+border: none;
+text-decoration: none;
+text-transform: capitalize;
+transition: 0.2s linear;
+}
+html {
+font-size: 62.5%;
+overflow-x: hidden;
+scroll-behavior: smooth;
+scroll-padding-top: 9rem;
+background-color: #EAD8C0;
+}
+section {
+    padding: 8rem 7%;
+}
+.header {
+    width: 100%;
+    height: 10px;
+    background: url(img/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    border-bottom: 2px solid black ;
+    background-color: #322C2B;
+}
+nav .logo img {
+    width: 110px;
+}
+nav .links a {
+    color: var(--white);
+    font-size: 20px;
+    margin-right: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    position: relative;
+}
+nav .links a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #E59BE9;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s;
+}
+nav .links a:hover::after {
+    width: 100%;
+}
+nav #menu-btn,
+nav #close {
+    color: var(--white);
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: none;
+}
+
+.header a {
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+    font-family: courier;
+    color: #FFC94A;
+}
+
+.header .content {
+    padding: 130px 7%;
+    color: var(--white);
+}
+.header .content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 3rem 0;
+}
+.header .content h1 {
+    font-size: 5rem;
+    letter-spacing: 2px;
+}
+.btn {
+    padding: 1.3rem 5rem;
+    margin: 3rem 0;
+    color: var(--black);
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: 0.3rem solid var(--black);
+    cursor: pointer;
+}
+.btn:hover {
+    background: none;
+    color: var(--white);
+}
+.nav-change {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  h1 {
+    text-align: center;
+    padding-top: 100px;
+    font: caption;
+    font-weight: bold;
+    margin-bottom: 50px;
+    background-color: #ddd;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #EAD8C0;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  /*footer style*/
+
+.footer {
+    width: 100%;
+    height: auto;
+    background: url(img/foot-bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 20rem;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    padding: 2.5rem 0;
+    background-color: black;
+}
+.footer .container .footer-box {
+    padding: 1rem;
+}
+.footer .container .footer-box h3 {
+    color: var(--white);
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+.footer .container .footer-box p {
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    padding: 1.2rem 0;
+}
+.footer .container .footer-box p a {
+    color: var(--bg);
+}
+.footer .container .footer-box form input {
+    width: 70%;
+    padding: 1rem;
+}
+.footer .container .footer-box form button {
+    background: var(--bg);
+    color: var(--white);
+    padding: 1rem;
+    cursor: pointer;
+}
+.footer .container .footer-box div a {
+    margin: 0.5rem;
+    color: var(--white);
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    background: var(--bg);
+}
